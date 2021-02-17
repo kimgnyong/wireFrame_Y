@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    vertical-align: middle;
+}
+
+html,body{
+    width:100%;
+    height: 100%;
+}
+/* html 스크롤바 생성 scroll (생성)<-->(삭제) hidden */
+html{
+    overflow-y: scroll;
+}
+
+body{
+    font:normal 14px/1 'arial', 'sans-serif';
+    /*
+        여러줄에 써야할 명령어를 한줄로 사용
+        font-weight: normal; 
+        font-size: 14px; 
+        line-height: 1; 
+        font-family: 'arial'; 
+    */
+    color:#444;
+    background: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:14px; font-weight: normal;}
+i,em,address {font-style: normal;}
+ul,li{list-style: none;}
+
+.clearfix::after{content: '';display: block; clear:both;}
+.blind {display:block;text-indent:-2000px; overflow: hidden;}
+
+/* 링크태그 */
+a {color:#444; text-decoration: none;}
+/* 시멘틱 태그 */
+header,main,section,footer{display: block;}
